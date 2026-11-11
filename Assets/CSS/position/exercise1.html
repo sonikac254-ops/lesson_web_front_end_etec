@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .menu{
+            margin: 50px;
+            display: flex;
+            gap: 3rem;
+            list-style-type: none;
+        }
+        .meu > li{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            width: 200px;
+            padding: 10px;
+            position: relative;
+            background-color: aquamarine;
+        }
+        .menu > li > .fa-angle-down{
+            color: rgb(202, 0, 0);
+            font-size: 20px;
+            transition: all .3s ease-in-out;
+        }
+        .menu > li:hover > .fa-angle-down{
+            transition: all .3s ease-in-out;
+            transform: rotate(180deg);
+        }
+        .menu > li > a , .menu > li > .dropdown > li > a{
+            color: rgb(156, 10, 10);
+            font-size: 20px;
+            text-decoration: none;
+        }
+        .menu>li>.dropdown{
+            height: 0px;
+            overflow: hidden;
+            transition: all .3s ease-in-out;
+            width: 300px;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            list-style-type: none;
+            border-top: 2px solid brown;
+            background-color: aquamarine;
+        }
+        .menu > li:hover > .dropdown > li{
+            height: 170px;
+            transition: all .3s ease-in-out;
+        }
+        .menu > li > .dropdown > li{
+            padding: 10px;
+            transition: all .3s ease-in-out;
+            
+        }
+        .menu > li > .dropdown > li:hover{
+            transition: all .3s ease-in-out;
+            background-color: aqua;
+        }
+    
+
+    </style>
+</head>
+<body style="">
+    <ul class="menu">
+        <li>
+            <a href="">Dropdown</a>
+            <i class="fa-solid fa-angle-down"></i>
+            
+            <ul class="dropdown">
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Tiktok</a></li>
+                <li><a href="">Telegram</a></li>
+                <li><a href="">Instagram</a></li>
+            
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

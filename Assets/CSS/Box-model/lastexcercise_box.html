@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            font-weight: bold;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: whitesmoke;
+            padding: 20px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 10px;
+            width: 100%;
+            max-width: 800px;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            border-radius: 4px;
+        }
+        .header{
+            grid-column: span 2;
+            background-color: #38bdf8;
+            height: 60px;
+        }
+        .hero{
+            background-color: plum;
+            height: 200px;
+        }
+        .main-content{
+            background-color: yellow;
+            height: 250px;
+            font-size: 14px;
+            color: black;
+        }
+        .sidebar{
+            background-color: greenyellow;
+            height: 250px;
+            grid-row: span 5;
+
+        }
+        .extra-content{
+            background-color: gray;
+            height: 100px;
+        }
+        .related-images{
+            background-color: green;
+            height: 100px;
+        }
+        .related-posts{
+            background-color: pink;
+            height: 100px;
+        }
+        .footer{
+            background-color: orange;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+    <div class="container">
+    <!--Header-->
+    <div class="box header">Header</div>
+    <!--hero-->
+    <div class="box hero">Hero</div>
+    <!--Main content-->
+    <div class="box main-content">
+        Main content <br>
+        <span style="font-size: 10px; font-weight: normal; color: black;">If things do not right, make sure your browser is in"Experimental Mode"</span>
+    </div>
+    <!--Sidebar-->
+    <div class="box sidebar">Sidebar</div>
+    <!--Extra Content-->
+    <div class="box extra-content">Extra Content</div>
+    <!--Related images-->
+    <div class="box related-images">related-images</div>
+    <!--Related Posts-->
+    <div class="box related-posts">related-posts</div>
+    <!--Footer-->
+    <div class="footer">Footer</div>
+    </div>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: yellow;
+            height: 50px;
+            text-align: center;
+            font-size: 30px;
+        }
+        h1{
+            color: green;
+        }
+        h2{
+            color: black;
+        }
+        p{
+            color: blue;
+        }
+        p.title{
+            color: red;
+        }
+        div>p{
+            color: brown;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        div>section p{
+            color: blueviolet;
+        }
+
+
+    </style>
+</head>
+<body>
+    <fieldset>
+        <header>ក្បាលទំព័រ(Header)</header>
+        <h1>CSS</h1>
+        <h2>ឧទាហរណ៍</h2>
+        <p>Paragraph ខាងក្រៅ​​ div</p>
+        <p class="title">Paragraph ដែលមាន Class title​</p>
+        <div>
+            <p>Paragraph កូនផ្ទាល់របស់ div</p> //កូនរបស់div
+            <section> //កូនរបស់ div
+                <p>Paragraph កូនចៅរបស់​ div</p>
+            </section>
+        </div>
+        
+
+    </fieldset>
+</body>
+</html>

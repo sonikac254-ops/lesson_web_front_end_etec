@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .product-card{
+            border-radius: 20px;
+            background-color: white;
+            width: 350px;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+
+        }
+        product-card img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin: auto;
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+        .title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .text{
+            font-size: 18px;
+            font-weight: bold;
+            color: gray;
+            line-height: 0.5;
+            max-width: 170px;
+        }
+        .button{
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 13px;
+            
+        }
+        .product-name{
+            font-size: 12px;
+            color: grey;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+        .price{
+            font-size: 15px;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 15px;
+        }
+        .price::before{
+            content: "$89.99";
+        }
+        .product-color{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-top: -10px;
+        }
+        .product-color div{
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .blue{
+            background-color: #00bfff;
+            border: 2px solid whitesmoke;
+        }
+        .green{
+            background-color: #58d68d;
+        }
+        .pink{
+            background-color: pink;
+        }
+        .navy{
+            background-color: navy;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/ed/ce/9c/edce9c6f545130ff28c755d970fcaa2e.jpg" alt="" class="product-image" width="300px">
+            <div class="title">
+                <div class="text">Snickers Off-White</div>
+                <button>+Add to Card</button>
+            </div>
+            <div class="product-name">NIKE</div>
+            <div class="price"></div>
+            <div class="product-color">
+                <div class="blue"></div>
+                <div class="green"></div>
+                <div class="pink"></div>
+                <div class="navy"></div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

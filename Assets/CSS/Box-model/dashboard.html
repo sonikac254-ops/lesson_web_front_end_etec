@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .sidebar{
+        height: 100vh;
+        background-color: navy;
+        width: 300px;
+    }
+    .logo{
+        font-family: monospace;
+        font-weight: 700px;
+        display: flex;
+        font-size: 25px;
+        justify-content: center;
+        color: white;
+    }
+    .sidebar-menu{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
+        list-style: none;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    .sidebar-menu a{
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        font-weight: 700;
+    }
+    .sidebar-menu li{
+        display: flex;
+        align-items: center;
+    }
+</style>
+<body>
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <div class="logo">Logoipsum</div>
+            <div class="sidebar-menu">
+                <li><a href=""><i class="fa-solid fa-boxes-stacked"></i>Dashboard</a></li>
+                <li><a href=""><i class="fa-regular fa-pen-to-square"></i>Form</a></li>
+                <li><a href=""><i class="fa-solid fa-list"></i>List</a></li>
+                <li><a href=""><i class="fa-solid fa-table-list"></i>Profile</a></li>
+                <li><a href=""><i class="fa-solid fa-check"></i>Result</a></li>
+                <li><a href=""><i class="fa-solid fa-triangle-exclamation"></i>Exception</a></li>
+                <li><a href=""><i class="fa-regular fa-user"></i>Account</a></li>
+            </div>
+        </div>
+        <header class="navbar">
+            
+        </header>
+    </div>
+</body>
+</html>

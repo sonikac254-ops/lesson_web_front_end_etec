@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .grid{
+            width: min(calc(100% - 32px), 1220px);
+            display: grid;
+            margin: auto;
+            grid-template-columns: repeat(3, 1fr);
+            padding-top: 40px;
+            gap: 30px;
+            height: auto;
+        }
+        .item-grid{
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-around;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            align-items: center;
+        }
+        .navbar #bar{
+            display: none;
+        }
+        .menu{
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        .menu li a{
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .name{
+            font-size: 190%;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: gray;
+            display: flex;
+        }
+        .icon{
+            display: flex;
+            gap: 30px;
+        }
+        .product{
+            padding: 15px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            border-radius: 8px;
+        }
+        .product .name{
+            font-weight: bold;
+            font-size: 16px;
+            color: #333;
+        }
+        .product .info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .product .bts{
+            display: flex;
+            gap: 10px;
+        }
+        .product .bts button{
+            flex: 1;
+            padding: 8px 12px;
+            cursor: pointer;
+            border: 1px solid #333;
+            border-radius: 4px;
+            background-color: #fff;
+            color: #333;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        /* Hover Styles */
+        .product .bts button:first-child:hover {
+            background-color: #333;
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .product .bts button:last-child {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .product .bts button:last-child:hover {
+            background-color: #555;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .product .bts button:active {
+            transform: translateY(0);
+            box-shadow: none;
+        }
+
+        .product img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin: auto;
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+        @media screen and (max-width:576px) {
+            .grid{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+            .navbar #bar{
+                display: block;
+            }
+            .icon>i{
+                display: flex;
+                margin-left: 10px;
+                font-size: 20px;
+            }
+            .menu{
+                display: none;
+            }
+            .icon{
+                display: flex;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <i class="fa-solid fa-bars" id="bar"></i>
+        <ul class="menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Product</a></li>
+        </ul>
+        <div class="name">
+            KENZ 
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-truck"></i>
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+    </nav>
+
+    <div class="grid">
+        <div class="item-grid">
+            <div class="product">
+                <img src="https://cms.dresma.com/uploads/Image_2_11cac6fa82.jpg" alt="">
+                <div class="info">
+                    <div class="name">PARFUM</div>
+                    <p>$150</p>
+                </div>
+                <div class="bts">
+                    <button>View</button>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="item-grid">
+            <div class="product">
+                <img src="https://cms.dresma.com/uploads/Image_2_11cac6fa82.jpg" alt="">
+                <div class="info">
+                    <div class="name">PARFUM</div>
+                    <p>$150</p>
+                </div>
+                <div class="bts"> 
+                    <button>View</button>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="item-grid">
+            <div class="product">
+                <img src="https://cms.dresma.com/uploads/Image_2_11cac6fa82.jpg" alt="">
+                <div class="info">
+                    <div class="name">PARFUM</div>
+                    <p>$150</p>
+                </div>
+                <div class="bts">
+                    <button>View</button>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="item-grid">
+            <div class="product">
+                <img src="https://cms.dresma.com/uploads/Image_2_11cac6fa82.jpg" alt="">
+                <div class="info">
+                    <div class="name">PARFUM</div>
+                    <p>$150</p>
+                </div>
+                <div class="bts">
+                    <button>View</button>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="item-grid">
+            <div class="product">
+                <img src="https://cms.dresma.com/uploads/Image_2_11cac6fa82.jpg" alt="">
+                <div class="info">
+                    <div class="name">PARFUM</div>
+                    <p>$150</p>
+                </div>
+                <div class="bts">
+                    <button>View</button>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="item-grid">
+            <div class="product">
+                <img src="https://cms.dresma.com/uploads/Image_2_11cac6fa82.jpg" alt="">
+                <div class="info">
+                    <div class="name">PARFUM</div>
+                    <p>$150</p>
+                </div>
+                <div class="bts">
+                    <button>View</button>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
